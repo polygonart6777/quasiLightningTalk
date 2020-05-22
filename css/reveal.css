@@ -1828,11 +1828,37 @@ body {
     transform: rotate(36deg);
   }
 
-.row {
-  display: inline-flex;
+.imagesalt{
+  background-color:white;
+  opacity:0.30;
+  position:absolute;
+  top: 140px;
+  left: 2px;
+ z-index:0; 
+ opacity:0.35}
+
 }
 
-.column {
-  flex:50%;
-  padding: 5px;
+.rotateimagesalt{
+  background-color:white;
+  opacity:0.60;
+  clip-path: circle(180px at 200px 200px);
+  position:absolute;
+  top: 164px;
+  left: -2px;
+  z-index: 1;
+
 }
+
+.rotateimagesalt:hover{
+  animation: rotate-image-salt 3s forwards;   
+}
+
+  @keyframes rotate-image-salt {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+
