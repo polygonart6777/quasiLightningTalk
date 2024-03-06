@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Quasicrystals</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -35,57 +35,108 @@
     	<div class='deg240'><img style="background:none; border:none; box-shadow:none;" src="public/images/moleculeray.png" width=50%> </div>
     	<a href="https://www.clipart.email/" class='deg240'></a>
 		</div>  
-		<aside class='notes'> I stumbled upon them with my own research and chose to study at the Universit of Victoria because of my supervisor's research connections to quasicrystals.  I will give a broad view of the story in this talk and if you're interested in how my research connects feel free to ping me.  Quasicrystals were discovered because of the interplay between the fields of chemistry, mathematics and physics.    And what really drew me to them, is how their existence created a paradigm shift in all three fields, it opened people’s eyes and forced them to consider something they previously thought was impossible. </aside> 
+		<aside class='notes'> I stumbled upon them with my own research and chose to study at the Universit of Victoria because of my supervisor's research connections to quasicrystals.  I will give a broad view of the story in this talk and if you're interested in how my research connects feel free to ping me.  Quasicrystals were discovered because of the interplay between the fields of chemistry, mathematics and physics.    And what really drew me to them, is how their existence created a paradigm shift in all three fields, it opened people’s eyes and forced them to consider something they previously thought was impossible. If you could choose for you to get one thing out of this talk, it's that both science and mathematics are alive and ever-changing and ever-updating fields.  A lot of poeple think that mathematics is full of static truths, but in fact this is not really the case.  Definitions are updated, information consolidated and made more abstract the field is ever calibrating to new information.</aside> 
     </section>
 
     <section>
     <h3> Crystallography </h3>
 <a href=https://www.kqed.org/science/1536955/identical-snowflakes-scientist-ruins-winter-for-everyone-deep-look> <img src="public/images/snowflake.gif"  height="75%" width="75%" align='center'> </a> 
 
-    <aside class ='notes'> We begin with Chemistry and the study of crystals.  Crystallography asks questions about the structure of crystals and how they are formed. Questions like why do snowflakes have six arms?
+    <aside class ='notes'> We begin with Chemistry and the study of crystals.  
+		The story of crystallography dates back to Johannes Kepler in 1611, when he was too poor to purchase a gift, so he wrote an essay on snowflakes to give to his friend for Christmas.  Apparently, he had noticed a snowflake on the lapel of his coat in Prague, and was curious about its geometry. It is believed that from this work, crystallography began: the exploration of how the geometric shapes of crystals can be explained in terms of the structure of their constituent particles.
+		Crystallography asks questions about the structure of crystals and how they are formed. Questions like why do snowflakes have six arms?
 
-     This animation shows the structure of a snowflake, molecules fitting together in the shape of a hexagonal ring with bonds forming between hydrogen of one molecule and the oxygen of another molecule.  As more molecules join the growing crystal, they fit into a repeating shape, which is why you tend to find snowflakes with six arms or six fold symmetry.
+     This animation shows the structure of a snowflake, molecules fitting together in the shape of a hexagonal ring with bonds forming between hydrogen of one molecule and the oxygen of another molecule.  As more molecules join the growing crystal, they fit into a repeating shape.
 
-     </aside>
+	 <!-- https://www.nature.com/articles/480455a#:~:text=A%20booklet%20of%20just%2024,have%20their%20striking%20hexagonal%20symmetry. -->
+	</aside>
     </section>
 
 
     <section>
-		<p style = "font-size: 60px; color: #b7410e"> What is a crystal? </p>  
+		<p class="titleText"> What is a crystal? </p>  
 		<img src="public/images/breakingbad.jpg" height="50%" width="50%"> 
 		<p> "A substance in which the constituent atoms, molecules or ions are packed in a regularly ordered three-dimensional pattern."  <p style= "color:yellow">-Walter White</p> 
-		<aside class='notes'> We tend to assume that Nature is efficient and organizes itself for stability.  Crystals were therefore believed to be made up of regularly-repeating components in the structure of a lattice in space.  With the discovery that crystals diffract x-rays, the method of x-ray diffraction verified that crystals distribute themselves periodically, meaning with translational symmetry.  </aside>
+		<aside class='notes'> We tend to assume that Nature is efficient and organizes itself for stability.  The hypothesis that crystals are formed by a periodic arrangement of unit cells was the starting
+			point for the development of modern crystallography.  Pure crystals were therefore believed to be made up of regularly-repeating components in the structure of a lattice in space. Regularly repeating is a key term here.  For a long time, it was believed that the pattern was periodic.  Note that things are not crystals are glass and silicone.</aside>
 	</section>
 
-    <section>
-   <h5> Crystal structure and symmetry </h5>
-   <p> Only 1,2,3,4 and 6 fold symmetry is possible </p>
-<div class='fragment' data-fragment-index="1"> <img src="public/images/saltdiffraction.jpeg"  class='rotateimagesalt'  width="400px" align='left' > </div> 
-		<div> <img src="public/images/saltdiffraction.jpeg"   class='imagesalt' width="400px" align='left' > </div>
-		<div class='twoimages'> <img src="public/images/salt.jpg" height="200px" align='left'> </div> 
+	<section> 
+		<img  src="public/images/latticeWithUnitCell.jpg" height="375px"/>
+		<img class='latticeTransform' src="public/images/latticeWithUnitCell.jpg" height="375px"/>
+		<p> "A substance in which the constituent atoms, molecules or ions are packed in a <span style="font-style:italic">periodically </span> repeating three-dimensional pattern."  <p style= "color:yellow">-Historic Definition</p> 
+		<aside class = 'notes'> In a crystal lattice, it was assumed that we could build up a crystal by repeating it in the three different axes.   What is meant by a periodic pattern is one for which we can translate over by multiples of a unit and leave it seemingly unchanged.</aside>
+	</section>
 
-<aside class='notes'>  Crystallographers noticed that in the x-ray diffraction patterns they saw, the only possible symmetries of a crystal were 1,2,3,4 and 6. For two and three dimensional periodic patterns, only 1,2,3,4, and 6 fold symmetries are possible.  This came to be called the Crystallographic Restriction and was published in chemistry textbooks far and wide. In this case, salt has four fold symmetry, this means that if the diffraction pattern were to be rotated by a 1/4 of a turn or 90 degrees, it would look as if it had not been moved at all.  The rotated pattern would fall right on top of the original.And in fact, this can be proved mathematically. </aside>
+	<section>
+		<p class="titleText"> Symmetry</p>
+		<p> A symmetry is an action or transformation when applied to an object that leaves it seemingly unchanged. </p>
+		<img src="public/images/symmetrydogs.jpeg" height="300px"/>
+		<img  class="reflectionSymmetry"src="public/images/symmetrydogs.jpeg" height="300px"/>
+
+		<aside class='notes'> The idea of an action on an object leaving it unchanged is called Symmetry! It can help us determine the structure of crystals and from there we can learn about things like stability, formation, etc. This picture depicts reflectional symmetry </aside>
+	</section>
+
+	<section>
+		<p class="titleText"> Why is symmetry important?</p>
+		<p>The symmetries in the arrangement of atoms can help us understand the properties of the materials.</p>
+		<img src="public/images/diamon-graphite.png" height="300px"/>
+		<aside class='notes'> Elements can have very different properties based on how they are stacked together.  Take for example graphite and diamond, both made up of just carbon but how carbon atoms are combined produces very different results. </aside>
+	</section>
+	
+    <section>
+		<p class="titleText"> Crystal structure and symmetry </p>
+		<div class="fragment fade-in"> <img src="public/images/saltdiffractionarrow.jpeg"   class='imagesalt' width="400px" align='left' > </div>
+		<div class='fragment fade-in'> <img src="public/images/saltdiffractionarrow.jpeg"  class='rotateimagesalt'  width="400px" align='left' > </div> 
+		<div class='twoimages'> <img src="public/images/salt.jpg" height="200px" align='left'>   <figcaption style="color:#7FFFD4">Salt crystal NaCl</figcaption>
+			<!-- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10365170/pdf/10.3184_003685017X14858694684395.pdf -->
+		</div> 
+
+	<aside class='notes'> Let's take the example of a salt crystal.  If we consider the front plane of the crystal we can investigate some of the symmetries it posseses.  On the left we have an electron diffraction pattern, this is a tool crystallographers use to identify crystals and determine their symmetries.  The bright spots are called Bragg peak, and indicate places that have defracted from the crystal, this is one way to determine that we have a crystal sample.  For example, for an material such as glass whic his not considered crystaline, the diffraction pattern would look like noise.  In this case, salt has four fold symmetry, this means that if the diffraction pattern were to be rotated by a 1/4 of a turn or 90 degrees about the axis coming into the center of this image, it would look as if it had not been moved at all.  The rotated pattern would fall right on top of the original.And in fact, this can be proved mathematically. </aside>
     </section>
 
 	<section>
-	<h4> Dan Shechtman </h4>
-		<img src="public/images/dan-shechtman-lab.jpg"  height="40%" width="40%" align='left'>
-		<div class='pelements'>  <img src="public/images/quasicrystalpentagon.jpg"  height="100%" width="100%" align='left'> <a href=http://www.veronicaberns.com/atomicsizematters target="_blank">A comic-al story" </a> </div>
+		<p class="titleText"> Which symmetries are possible? </p>
 
-		<aside class='notes'> The story begins in 1982 with a chemist from Technion University in Israel.  He was on sabbatical at Johns Hopkins University in Pennsylvania studying rapidly solidified aluminum transition metal alloys, when he stumbled upon this bad boy on the right. </aside>
+		<p class="fragment fade-in" style="font-size:24px;">Which of the following regular polygons can tile the plane?</p>
+
+		<div class="fragment fade-in" ><img src="public/images/regular-polygons.svg" height="400px" align="center" class="polygons"></div>
+
+		<aside class='notes'>  Imagine we have a fundamental unit, and we want to use it to create a periodic lattice.  If one of these polygons is a unit, which one of them can be used repeatedly to tile the plane?  This plane tiling is seeing as one of the faces of the crystal. If we think about the interior angles of each of these polygons, only the ones whose interior angles are a factor of 360 can be used to tile the plane. </aside>
 	</section>
 
 	<section>
-		<h2> Forbidden Symmetry </h2> 
-		<div class='fragment' data-fragment-index="2"> <img src="public/images/diffraction.jpg"  class='rotateimage'  width="400px" align='left' > </div> 
-		<div> <img src="public/images/diffraction.jpg"   style="z-index:0; opacity:0.35" width="400px" align='left' > </div>
-		<div class='twoimages'> <img src="public/images/shechtman_notebook.jpg" height="410px" align='left'> </div> 
-		<p class ='fragment fade-in' data-fragment-index="3"> "There can be no such Creature" </p>
-		<aside class ='notes'> When he looked at its diffraction pattern he noticed something remarkable something that did not match any periodically repeated structure.  The pattern had 10 fold symmetry.  <br> For a periodic crystal lattice, 10 fold symmetry was forbidden. “There can be no such Creature” Dan said to himself in Hebrew.  <br>  Shechtman's results were so out of the ordinary that, even after he had checked his findings several times, it took two years for his work to get published in a peer-reviewed journal. Once it appeared, he says, "all hell broke loose."	
-		</aside> 
-		</section>
+		<p class="titleText">Crystallographic Restriction</p>
+		<div class="tilingsPolygons">
+		<img class="fragment fade-in" data-fragment-index="1" src="public/images/triangle-tile.gif" height="275px" align="center">
+		<img class="fragment fade-in" data-fragment-index="4" src="public/images/square-tile.gif" height="275px" align="center">
+		<img class="fragment fade-in" data-fragment-index="7" src="public/images/pentagons-tile.gif" height="275px" align="center">
+		<img class="fragment fade-in" data-fragment-index="9" src="public/images/hexagon-tile.gif" height="275px" align="center">
+		<p class="fragment fade-in" data-fragment-index="2" >60 deg </p>
+		<p class="fragment fade-in" data-fragment-index="5">90 deg</p>
+		<p class="fragment fade-in" data-fragment-index="7">108 deg	</p>
+		<p class="fragment fade-in" data-fragment-index="10" >120 deg</p>
+		<p class="fragment fade-in" data-fragment-index="3">360/60 =  6</p>
+		<p class="fragment fade-in" data-fragment-index="6">360/90 = 4</p>
+		<p class="fragment fade-in" data-fragment-index="8">360/108 = 3.3...	</p>
+		<p class="fragment fade-in" data-fragment-index="11" >360/120 = 3</p>
+	</div>
+	<p class="fragment fade-in" style="color:#5DADE2"> Only 1,2,3,4 and 6 fold symmetry is possible.</p>
+	<p class="fragment fade-in" style="color:#ff0028">Five fold or say 10 fold symmetry is impossible!</p>
+	<aside class='notes'>  The triangle has a well known interior angle of 60 degrees, we know 60 goes into 360, 6 times and so we see a six fold symmetry about the axis going through each vertex of a triangle. The only possible rotational symmetries of a crystal are 1,2,3, 4 and 6.  We see 6 fold in the tiling by equilateral triangles, 4 fold in the tiling by squares, 3 fold in the tiling of hexagons and 2 fold in tiling by squares as well.  You could also see 2 fold in tilings by parallelograms such as a rhombus or rectangle.  This came to be called the Crystallographic Restriction and was published in chemistry textbooks far and wide. </aside>
 
-<!-- 	<section>
+	<!-- https://lifethroughamathematicianseyes.wordpress.com/2015/08/30/new-irregular-pentagon-that-can-tile-the-plane/	 -->
+</section>
+
+	<!-- <section>
+
+		<img src="public/images/lattice-patterns.png.crdownload" height="400px" align="center">
+		//https://echemi.com/community/why-are-there-exactly-5-types-of-two-dimensional-lattices-and-what-distinguishes-them_mjart2203305730_109.html
+		<aside class='notes'> </aside>
+	</section> -->
+
+<!-- 
+	<section>
 		<h4> The only possible rotational symmetries of a crystal are 1,2,3, 4 and 6. </h4>
 	<div class='row'>	<img src='public/images/crystallographicrestriction.png' width='50%'> <img src='public/images/crystallographicrestriction2.png' width='30%'> </div>
 	<p> Rotate one row by $ \theta =2\pi/n$ and the other by $-\theta$.   </p>
@@ -93,94 +144,195 @@
 	\[ n = 1,2,3,4,6\]
 	<aside class='notes'> Now, that we are assuming a crystal's structure is periodic, ie has translational symmetry, we can show that the only possible rotational symmetries it can have are 1, 2, 3, 4, and 6 fold.  The crystal sits in three dimensional space, but let's consider the plane for which we see the rotational symmetry.  This is done with a little bit of trig and algebra.  </aside>
 	</section>  -->
+
+
+	<section>
+		<p class="titleText">Dan Shechtman </p>
+		<img src="public/images/dan-shechtman-lab.jpg"  height="40%" width="40%" align='left'>
+
+		<div class='pelements'>  <img src="public/images/quasicrystalpentagon.jpg"  height="100%" width="100%" align='left'> <a href=http://www.veronicaberns.com/atomicsizematters target="_blank">A comic-al story </a> </div>
+
+		<aside class='notes'> The story begins in 1982 with a chemist who was studying rapidly solidified aluminum transition metal alloys, when he stumbled upon this alloy of aluminum and manganese on the right. </aside>
+	</section>
+<!-- 
+	<section>
+		<p>X-ray Diffraction (1912)</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/HrWT2M63DbU?si=HmFD5FTpeXaMQ_JX&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<aside class='notes'> X-rays are a form of light that has a wavelength about the size of an atom.  The peaks we see are a consequence of constructive interference.  X-ray diffraction was used to identify and classify crystals.  Crytallographers work backwards from diffraction pattern to 3d lattice.  </aside>
+
+	</section>
+
+	<section>
+
+	</section> -->
+
+	<section>
+		<p class="titleText"> Forbidden Symmetry </p> 
+		<div class='fragment' data-fragment-index="2"> <img src="public/images/diffractionarrow.jpg"  class='rotateimage'  width="400px" align='left' > </div> 
+		<div> <img src="public/images/diffractionarrow.jpg"   style="z-index:0; opacity:0.35" width="400px" align='left' > </div>
+		<div class='twoimages'> <img src="public/images/shechtman_notebook.jpg" height="410px" align='left'> </div> 
+		<p class ='fragment fade-in' data-fragment-index="3"> "There can be no such Creature" </p>
+		<aside class ='notes'> When he looked at its diffraction pattern he noticed something remarkable.  First of all, it showed the distinctive bright spots of a crystal structure.  But, looking more closely at the symmetry in this plane, showed something imposible. The pattern had 10 fold symmetry.  <br> For a periodic crystal lattice, 10 fold symmetry was forbidden. “There can be no such Creature” Dan said to himself in Hebrew.  <br>  Shechtman's results were so out of the ordinary that, even after he had checked his findings several times, it took two years for his work to get published in a peer-reviewed journal. Once it appeared, he says, "all hell broke loose."	
+		</aside> 
+		</section>
+
+		<section>
+			<iframe src="https://giphy.com/embed/fGR0Guse467fskDKRP" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+			<aside class='notes'>  The scientific community was not so open-minded about the discovery.
+		</section>
 				
 	<section> 
-		<blockquote style ="font-size: 70px; color: #710000" cite='Pauling'> "There are no quasicrystals, only quasiscientists." <footer style ="font-size: 40px"> Linus Pauling  </footer></blockquote> 
+		<blockquote class="fragment fade-in" style ="font-size: 70px; color: #710000" cite='Pauling'> "There are no quasicrystals, only quasiscientists." <footer style ="font-size: 40px"> Linus Pauling  </footer></blockquote> 
 		<iframe src="https://giphy.com/embed/pyFsc5uv5WPXN9Ocki" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-		<aside class='notes'>  Shechtman’s research group told him to ”go back and read the
-		textbook” and a couple of days later ”asked him to leave for ’bringing
-		disgrace’ on the team.” <br> "For a long time it was me against the world," said Dan Shechtman. "I was a subject of ridicule and lectured about the basics of crystallography. The leader of the opposition to my findings was the two-time Nobel Laureate (one for chemistry and one for peace) Linus Pauling, the idol of the American Chemical Society and one of the most famous scientists in the world.
+		<aside class='notes'>  Shechtman’s research group told him to ”go back and read [a first year chemisty] textbook” and a couple of days later ”asked him to leave for ’bringing
+		disgrace’ on the team.” <br> "For a long time it was me against the world," said Dan Shechtman. "I was a subject of ridicule and lectured about the basics of crystallography. The leader of the opposition to my findings was the two-time Nobel Laureate (one for chemistry and one for peace) Linus Pauling, the idol of the American Chemical Society and one of the most famous scientists in the world.  Pauling called for an end to the testing of nuclear weapons but also an end to war itself. He proposed that a World Peace Research Organization be set up as part of the United Nations to "attack the problem of preserving the peace".  He did do some amazing things for peace, he just didn't believe in the existence of quasicrystals
 	</section>
 
 
 <!-- https://www.theguardian.com/science/2013/jan/06/dan-shechtman-nobel-prize-chemistry-interview -->
 .
 	<section> 
-	<h3> A paradigm shift </h3>
-		<blockquote class = 'fragment' data-fragment-index='3' style ="font-size: 50px; color: #554CAA">"Danny, this material is telling us something and I challenge you to find out what it is." -John W. Cahn </blockquote>
+		<p class="titleText"> A paradigm shift </p>
+		<blockquote class = 'fragment' data-fragment-index='3' style ="font-size: 50px; color: #554CAA; margin: 100px;">"Danny, this material is telling us something and I challenge you to find out what it is." -John W. Cahn </blockquote>
 <br> <br>
-		<p class = 'fragment' data-fragment-index='2' style='font-size:35px'> New definition: Any solid having an essentially discrete diffraction diagram.</p> 	
+		<!-- <p class = 'fragment' data-fragment-index='2' style='font-size:35px'> New definition: Any solid having an essentially discrete diffraction diagram.</p> 	 -->
 		<aside class='notes'> 
-		In spite of all this, Dan says that the experience was not as traumatic as it sounded. Scientists around the world had quickly replicated Shechtman's discovery and, the field of crystallography was experiencing a paradigm shift. In 1992, the International Union of Crystallography accepted that quasi-periodic materials must exist and altered its definition to the broader "any solid having an essentially discrete diffraction diagram".  In some sense this new definition was a cop out, the right definition for a crystal is still being debated today.   Quasicrystals remained as mysterious as ever.  Dan Shechtman was urged by his collaborators to dig deeper. </aside> 
+		In spite of all this, Dan says that the experience was not as traumatic as it sounded. Scientists around the world had quickly replicated Shechtman's discovery and, had found crystal-like materials with 7 fold, 8-fold, 12-fold etc symmetry. The field of crystallography was experiencing a paradigm shift and there was a need to redefine how we think of crystals.  Dan Shechtman was urged by his collaborators to dig deeper.  </aside> 
 	</section>
+
+	<!-- <section>
+		<p class="titleText"> Quasicrystals </p>
+		<img src="public/images/quasicrystal.jpg" height="50%" width="50%" align='left'>
+		<aside class='notes'>  Shechtman and his team found that the material was made up of aperiodic tilings of two types of rhombuses.  The material was not periodic, but it was ordered.  The material was a solid with a discrete diffraction pattern, but it was not a crystal.  It was a new kind of matter.  They coined the term quasicrystal and described them as models of aperiodic tilings of three dimensional space.  The new theory overturned 200 years of scientific dogma.  By changing the set of assumptions, quasicrstals went against all of the previously accepted mathematical theorems about the symmetry of matter. Symmetries once thought to be forbidden for solids are actually possible for quasicrystals, including solids with axes of ten-fold symmetry.  Even more surprisingly, the two researchers had been working independendently, the only found out about each other when Steinhardt and his student Levine were shown a preprint of the Shechtman team's paper. Paul immediately recognized that Shechtman's discovery could be experimental proof of their still-unpublished quasicrystal theory.  </aside>
+	</section> -->
+
+
+	<!-- But other compounds have been produced with other symmetries, like 8-fold or 12-fold symmetries. Besides having their surprising structure, these
+materials exhibit strange properties. For instance, even though made of good metals,
+they are mostly insulators at low temperature [62, 99]. They are also mechanically hard
+and fragile, and they exhibit a superplastic transition at high temperature just below the
+melting temperature (see for instance [62] for some of these properties). From the point
+of view that is developped in this course, the most interesting aspect of these materials is
+that there is no way of treating the aperiodicity as a perturbation of a periodic structure.
+Moreover, numerical calculations proved to be extremely hard and they are not powerful
+enough to explain most of the properties described above. There is a need for a new
+approach and this a typical interesting problem of Mathematical Physics --  Connes>
 
 	<section>
 		<p> Meanwhile in mathematics...</p> <br>
 		<iframe src="https://giphy.com/embed/28cgfmjINcromuwDjs" width="480" height="480" frameBorder="0" ></iframe>
 		<aside class='notes'>  Now we pause the story and switch gears to mathematics.  In pure mathematics, many mathematicians are very proud to be investigating ideas they deem as not at all useful to the real world, but somehow, regardless of the intentions of mathematicians, these ideas often times have a way of making themselves useful.  The idea behind the existence of quasicrystals is an example of just that.</aside>
 	</section>
-	
+
 	<section data-background='public/images/escher.jpg'> 
-		<div style='background-color: #174038cc'> 
-		<p style='font-size:50px'>  The Domino Problem </p>  In 1961, Wang conjectured that if a finite set of tiles can tile the plane, then they can do so periodically. <br> 
-				He also observed that this conjecture would imply the existence of an algorithm to decide whether a given finite set of tiles can tile the plane. </div>
-		<aside class='notes'> Tiles in this case could be any closed shapes that may be coloured or patterened in some way. The interesting thing to me here is that mathematics was no different than chemistry, so focused on periodicity being the only answer..   
-		</section>
+		<div style='background-color: #174038; padding: 30px'>
+			<p class="titleText"> Periodic Tilings </p>
+
+			Periodic tilings consist of a finite shaped unit that can be translated to fill the plane or space.  A periodic tiling has translational symmetry.
+		</div>
+		<aside class="notes"> Just a reminder of the definition of periodic tilings with an example from the artist MC Escher in the back.  We have one fundamental unit consisting of four sea stars and four clam shells, this unit can be translated left/right and up/down without gaps to fill the plane.</aside>
+	</section>
+	
+	<section>
+		<p class="titleText">  The Domino Problem </p>  
+		<div style='height:200px; padding-bottom:40px'>	
+		<img src="public/images/Wang_tiling.png" />
+		</div>	
+		"Given a finite set of tiles, do they tile the plane?" Wang (1961) <br>
+		He conjectured that if a finite set of tiles can tile the plane, then they can do so periodically. <br> 
+				He showed if this is the case, there was an algorithm to decide whether the set can tile the plane.
+		<aside class='notes'> In 1961, Hao Wang a mathematics professor worked on logic problems.  He developed a tile set consisting of square tiles whose edges were colored in various ways shown here.  They are called Wang dominoes.  His question which later became to be konwn as the domino problem, "Cana finite set of Wang tiles, tile the plane?" He consjectured, that if a finite set of tiles can tile the plane, then they can do so periodically.  he even had an algorithm to decide whether a given set of tiles can tile the plane, but only if this conjecture was true.  The interesting thing to me here is that mathematics was no different than chemistry, so focused on periodicity being the only answer..   
+	</section>
 
 	<section>
 		<img  src="public/images/xkcd.png"  width=50%  height=50% align=left>
 		<div class ='pelements'> 
-		<p> In 1966, Wang's student Robert Berger proved that no algorithm for the problem can exist, by showing its equivalence to the Halting problem.  </p> 
+		<p> In 1966, Wang's student Berger proved that no algorithm for the problem can exist, by showing its equivalence to the Halting problem.  </p> 
 		</div>  
-		<p style='color:#5DADE2'> This meant, that there must exist a finite set of tiles that tiles the plane, but only aperiodically. </p>
-		<aside class='notes' > Aperiodically, means that the tiling has some order, finite patches of the tilling will repeat throughout the tiling, but it does not have translational order.  No matter how you move the tiling around, it will never overlap back onto itself.  Berger created such a tiling using over 20,000 tiles.  He later narrowed the number of tiles to 104.  An amateur mathematician, Ammann, decreased the number to 6!  And finally, a mathematical physicist was able to find an aperiodic tiling with just two tiles, his name is Roger Penrose.  
+		<p style='color:#5DADE2'> This meant, that there must exist a finite set of tiles that tiles the plane, but only non-periodically. </p>
+		<aside class='notes' >Wang's student proved the conjecture was false.  There is no algorithm to decide whether a set of tiles can tile the plane.  This also meant that there is a set of tiles the can ONLY tile the plane aperiodically.  Berger created such a tiling using over 20,000 tiles.  He later narrowed the number of tiles to 104.  At this point, the race was on to decrease the number of tiles in a set that can only tile the plane aperiodically.  An amateur mathematician, Ammann, decreased the number to 6!  And finally, a mathematical physicist was able to find an aperiodic tiling with just two tiles, his name is Roger Penrose.  For a long time it was thought this was the minimum set of set of tiles, but last year, in 2023, David Smith, who is not a professional mathematician, found a single tile that can tile the plane aperiodically.  
 		<ul> 
-			<li> Berger's 20,000+tiles </li> 
+			<li> (1960s) Berger's 20,000+tiles </li> 
 			<li> Berger 104 </li> 
-			<li> Ammann 6 </li> 
+			<li> Knuth 92 </li>
+			<li> (1970s) Ammann, Robinson 6 </li> 
 			<li> (1974) Penrose 2 </li> 
+			<li> (2023) David Smith 1</li>
 		</ul>
-		</aside>
+	</aside>  
+	</section>
+
+	<section>
+		<p class="titleText"> Aperiodic Tilings </p>
+		<div style='background-color: #174038; padding: 30px'>
+			An aperiodic tiling has no translational symmetry but does have long range order.
+		</div>
+		<!-- https://preshing.com/20110831/penrose-tiling-explained/ -->
+		<aside class="notes">Aperiodically, means that the tiling has some order, finite patches of the tilling will repeat throughout the tiling, but it does not have translational order.  No matter how you move the tiling around, it will never overlap back onto itself. </aside>
 	</section>
 	
 	<section>
-		<h4> Penrose's Aperiodic tilings </h4> 
+		<p class="titleText"> Penrose's Aperiodic tilings </p> 
 		<img  src="public/images/rogerpenrose.jpg" height='40%' width="40%"> 
 		<a href= https://www.wikiwand.com/en/Penrose_tiling > <img  cite ='https://www.wikiwand.com/en/Penrose_tiling' src="public/images/penroseanimated.gif" height='45%' width="45%"> </a> 
 		<aside class='notes'> Here we see tilings using two types of rhombuses and then also a kite and dart tiling on the right. When given special markings, they will only tile the plane aperiodically.  They have the special property that any finite pattern in the tiling occurs infinitely often throughout the tiling.  Some of the patches have a distinct five fold star rotational symmetry.  In geometry, the number five seems to be very closely followed by the golden ratio.  The number of kite to dart tiles in a patch of the tiling is given by a ratio of Fibonacci numbers and so approximates the golden ratio.   
 	</section>
 
 	<section>
-		<img  src="public/images/transbay.jpg" height='75%' width="75%">
-		<aside class='notes'> People have become pretty obsessed with the Penrose tiling and have been putting them all over the place.  I'm actually one of these people.  One of my projects was to lasercut some penrose tiling coasters.  Earlier there was an image of Roger Penrose standing on a tiling in the mathematics department at the University of Cambridge.  Here is a picture of the facade of the TransBay Railroad center in San Francisco.   There was even toilet paper made with the tiling printed on it.  Unfortunately, Roger Penrose has a patent on the tiling and as soon as he found out, he sued Kleenex for making it.  </aside>
+		<img src="public/images/penroseSubstitution.png"/>
 	</section>
 
+	<!-- https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-tilings/ -->
+
+	<section>
+		<div class="penroseApp">
+			<img  src="public/images/transbay.jpg" width='100%'>
+			<img src="public/images/toilet-paper-roll.jpg" width='100%'>
+			<figcaption>TransBay Railroad center in San Francisco</figcaption>
+			<figcaption> Penrose tiling toilet paper </figcaption>
+
+		</div>
+		<aside class='notes'> People have become pretty obsessed with the Penrose tiling and have been putting them all over the place.  I'm actually one of these people.  One of my projects was to lasercut some penrose tiling coasters.  Earlier there was an image of Roger Penrose standing on a tiling in the mathematics department at the University of Cambridge.  Here is a picture of the facade of the TransBay Railroad center in San Francisco.   There was even toilet paper made with the tiling printed on it.  Unfortunately, Roger Penrose has a patent on the tiling and as soon as he found out, he sued Kleenex for making it. (show your coasters) </aside>
+	</section>
+
+	<section>
+		In 2023, ein stein "one stone" was discovered.
+		<img src="public/images/davidSmith.jpg" height="400px"/>
+<br>
+		Smith–Myers–Kaplan–Goodman-Strauss "hat" and "Spectre" polytile
+	</section>
+
+	<!-- <section>
+		People are pretty obsessed with the spectre and turtle tile as well.
+		<!-- https://www.nytimes.com/2023/12/10/science/mathematics-tiling-einstein.html -->
+	</section> 
+
 	<section> 
-		How does this tiling link to quasicrystals?
-		<aside class ='notes'> So now you may thinking, what do aperiodic tilings have to do with quasicrystals?</aside>
+		How do aperiodic tilings link to quasicrystals?
+		<aside class ='notes'> So now you may thinking, what do aperiodic tilings have to do with quasicrystals? Now we turn to physics to connect the ideas of mathematics with the puzzling discovery made by Dan Schechtman.</aside>
 	 </section>			
 		
 	<section> 
-		1983 Paul Steinhardt and his student Don Levine were inspired by the Penrose tiling and created a theory of a new kind of matter. <br>
+		1984 Paul Steinhardt and his student Don Levine were inspired by the Penrose tiling and created a theory of a new kind of matter. <br>
 				 "Quasicrystals: A New Class of Ordered Structures."
 		<img src="public/images/paulsteinhardt.jpg" height = '50%' width ='50%'> 
-		<aside class='notes'> Paul Steinhardt, an astrophysicist, was inspired by the Penrose tiling and thought that if the plane can be tiled aperiodically why not space as well?   He coined the term quasicrystals and described them as models of aperiodic tilings of three dimensional space.   The new theory overturned 200 years of scientific dogma.   By changing the set of assumptions, quasicrstals went against all of the previously accepted mathematical theorems about the symmetry of matter. Symmetries once thought to be forbidden for solids are actually possible for quasicrystals, including solids with axes of ten-fold symmetry.  Even more surprisingly, the two researchers had been working independendently, the only found out about each other when Steinhardt and his student Levine were shown a preprint of the Shechtman team's paper. Paul immediately recognized that Shechtman's discovery could be experimental proof of their still-unpublished quasicrystal theory. (Show your quasicrystal) </aside>
-				 </section>
+		<aside class='notes'> Paul Steinhardt, an astrophysicist, was inspired by the Penrose tiling and thought that if the plane can be tiled aperiodically why not space as well?   He coined the term quasicrystals and described them as models of aperiodic tilings of three dimensional space.   The new theory overturned 200 years of scientific dogma.   By changing the set of assumptions, quasicrstals went against all of the previously accepted mathematical theorems about the symmetry of matter. Symmetries once thought to be forbidden for solids are actually possible for quasicrystals, including solids with axes of ten-fold symmetry.  Even more surprisingly, the two researchers had been working independendently, the only found out about each other when Steinhardt and his student Levine were shown a preprint of the Shechtman team's paper. Paul immediately recognized that Shechtman's discovery could be experimental proof of their still-unpublished quasicrystal theory. (Show your quasicrystal and paul's book) </aside>
+	</section>
 
 	<section> 
-		<iframe src="https://giphy.com/embed/fGR0Guse467fskDKRP" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		<img src="public/images/haters-gonna-hate.gif" height="400px">
 		<aside class='notes'>
-		You would think that with these two papers published that the alloy Dan Shechtman found would be readily accepted and he would be redeemed. But no.  There was a lot of doubt surrounding both papers.  Many theories came about to explain Dan Shechtman's discovery as a mistake.  Each counter-theory that came about was disproved but sketicism remained. Dan Shechtman discvered an man made alloy, but it was believed that nature would never construct such a thing. Paul and Dan spent the next 26 years convincing the scientific community that quasicrystals should be considered as crystals and that a natural quasicrystal was possible.   
+		You would think that with these two papers published that the alloy Dan Shechtman found would be readily accepted and he would be redeemed. But no.  There was a lot of doubt surrounding both papers.  Many theories came about to explain Dan Shechtman's discovery as a mistake.  Each counter-theory that came about was disproved but skepticism remained. Dan Shechtman discvered an man made alloy, but it was believed that nature would never construct such a thing. Paul and Dan spent the next 26 years convincing the scientific community that quasicrystals should be considered as crystals and that a natural quasicrystal was possible.   
 		</aside>
 	</section>
 	
 	<section>
+		<p class="titleText"> Khatyrka Meteorite (2009) </p>
 		<a href="https://www.quantamagazine.org/quasicrystal-meteorite-poses-age-old-questions-20140613"> 
-		<img src="public/images/YutaOnodaQuanta.jpg"> </a> 
+		<img class='fragment fade-in' src="public/images/YutaOnodaQuanta.jpg"> </a> 
 		<aside class = 'notes' > A little bit before 2009, Paul got lucky.  He was contacted by a researcher from Italy with a sample of a rock from Russia whose diffraction pattern had five fold symmetry.  Paul could not idenfity the origin and formation of the sample.  He sent it to several experts with very disappointing answers, the rock was believed to be slag or waste matter.  He decided to take the matter into his own hands, literally. He and a team travelled to the barren arctic tundra in Russia, on an expedition to find another piece of this rock that could be more clearly identified.  In 2009, his team had found a larger sample in the same place the previous sample had been found.  It was verified that this quasicrystal had five fold symmetry and was found in the natural world within a meteorite that is 4.5 billion years old.  Not only was this an amazing discovery, but this showed that quasicrystals were a stable state of matter.  Nature was happy to tile things aperiodically.   </aside> </section>
 
 	<section data-background='public/images/meteorshower.gif'>   
-		 Khatyrka meteorite 
 		<blockquote cite="" style="z-index:2; background-color:black"> 
 		 “The quasicrystals and related metallic aluminum minerals found in the meteorite imply the existence of physical process in the early stages of the formation of the solar system that we did not know before; we are still trying to work them out.”
 		<footer> Paul Steinhardt </footer> </blockquote>  <!-- http://physics.princeton.edu/~steinh/BindiSCIENCE.pdf -->					
@@ -190,12 +342,38 @@
 		2011 <br> 
 		<div class='nobelimage'> <img src = 'public/images/nobelprize.jpg' width='40%' height='40%'> 
 		<aside class='notes'> 
-		In 2011, Dan Shechtman won the Nobel prize in Chemistry for his discovery.  "Dan Shechtman's Nobel prize celebrated not only a fascinating and beautiful discovery, but also dogged determination against the closed-minded ridicule of his peers, including leading scientists of the day."  This story goes to show that sometimes it pays to believe in the impossible. </aside> 
+			In 1992, the International Union of Crystallography accepted that quasi-periodic materials must exist and altered its definition to the broader "any solid having an essentially discrete diffraction diagram".  In 2011, Dan Shechtman won the Nobel prize in Chemistry for his discovery.  "Dan Shechtman's Nobel prize celebrated not only a fascinating and beautiful discovery, but also dogged determination against the closed-minded ridicule of his peers, including leading scientists of the day."  This story goes to show that sometimes it pays to believe in the impossible. The definition for a crystal is still being debated today.  Quasicrystals are enshrouded in mystery and are actively being studied to this day.</aside> 
+	</section>
+
+	<section>
+		<p class="titleText"> Los Alamos Trinitite</p>
+				<!-- https://www.pnas.org/doi/10.1073/pnas.2101350118 -->
+
+		<!-- “Quasicrystals are formed in extreme environments that rarely exist on Earth,” said Wallace, who is a geophysicist. “They require a traumatic event with extreme shock, temperature, and pressure. We don’t typically see that, except in something as dramatic as a nuclear explosion.” The thermodynamic/shock conditions under which this quasicrystal formed are roughly comparable to those that formed the natural quasicrystals discovered in the Khatyrka meteorite, which dates back at least hundreds of millions of years and perhaps as far back as the beginning of the solar system. -->
+		</section>
+
+	<section>
+		<ul> 
+			<li> (1611) Kepler write essay on geometry of snowflakes</li>
+			<li> (1960s) Wang conjecture disproved by Berger by aperiodic tiling consisting of 20000+ tiles </li> 
+			<li> (1974) Penrose creates aperiodic tiling with two tiles</li> 
+			<li> (1982) Dan Shechtman discovers quasicrystal</li> 
+			<li> (1984) Shechtman, Blech, Gratias, Cahn. Paper on Quasicrystals published </li> 
+			<li> (1984) Steinhardt, Levine. Coins term and publishes theory on quasicrystals</li>
+			<li> (2009) First natural quasicrystal found by Steinhardt team</li>
+			<li> (2011) Shechtman wins Nobel prize in chemistry</li>
+			<li> (2021) Quasicrystal found in Los Alamos nuclear blast.</li>
+			<li> (2023) Aperiodic tiling constructed using one tile</li>
+		</ul>
+	</section>
+
+	<section>
+		<blockquote style="font-size:30px;"> Alice laughed: "There's no use trying," she said; "one can't believe impossible things." "I daresay you haven't had much practice," said the Queen. "When I was younger, I always did it for half an hour a day. Why, sometimes I've believed as many as six impossible things before breakfast." Alice in Wonderland. </blockquote>
+		<img src="public/images/alice-in-wonderland.jpg" height='50%' width='50%'>
 	</section>
 
 
 <section>
-<blockquote style="font-size:30px;"> Alice laughed: "There's no use trying," she said; "one can't believe impossible things." "I daresay you haven't had much practice," said the Queen. "When I was younger, I always did it for half an hour a day. Why, sometimes I've believed as many as six impossible things before breakfast." Alice in Wonderland. </blockquote>
 <ul style='font-size:35px'>
 <li> <a href=http://www.lacl.fr/pvanier/rech/cirm.pdf> Domino problem </a> </li>
 <li> <a href=https://www2.cs.duke.edu/courses/fall08/cps234/projects/tilings.pdf> More on the Domino Problem </a> </li>
@@ -205,7 +383,10 @@
 <li> <a href=https://scienceblogs.com/startswithabang/2016/02/15/the-most-astounding-picture-of-stars-beyond-our-galaxy-synopsis> Star background </a> </li>
 <li> <a href=https://en.wikipedia.org/wiki/Crystallographic_restriction_theorem> Crystallographic Restriction </a> </li>
 <li> <a href=https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.53.1951> Quasicrystal paper </a> </li>
-<li> <a hreef=https://www.amazon.ca/Second-Kind-Impossible-Extraordinary-Matter/dp/1476729921> The second kind of impossible by Paul Steinhardt </a> </li>
+<li> <a href=https://www.amazon.ca/Second-Kind-Impossible-Extraordinary-Matter/dp/1476729921> The second kind of impossible by Paul Steinhardt </a> </li>
+<li> <a href=https://archive.bridgesmathart.org/2001/bridges2001-1.pdf> bridges math art</a> </li>
+<li> <a href =https://discover.lanl.gov/news/0517-quasicrystal> Los alamos discovery</a></li>
+<li> <a href=https://preshing.com/20110831/penrose-tiling-explained> Penrose tiling explained</a></li>
 </ul> <br>
 
 
