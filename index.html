@@ -128,24 +128,6 @@
 	<!-- https://lifethroughamathematicianseyes.wordpress.com/2015/08/30/new-irregular-pentagon-that-can-tile-the-plane/	 -->
 </section>
 
-	<!-- <section>
-
-		<img src="public/images/lattice-patterns.png.crdownload" height="400px" align="center">
-		//https://echemi.com/community/why-are-there-exactly-5-types-of-two-dimensional-lattices-and-what-distinguishes-them_mjart2203305730_109.html
-		<aside class='notes'> </aside>
-	</section> -->
-
-<!-- 
-	<section>
-		<h4> The only possible rotational symmetries of a crystal are 1,2,3, 4 and 6. </h4>
-	<div class='row'>	<img src='public/images/crystallographicrestriction.png' width='50%'> <img src='public/images/crystallographicrestriction2.png' width='30%'> </div>
-	<p> Rotate one row by $ \theta =2\pi/n$ and the other by $-\theta$.   </p>
-	\[ ma = 2a\cos(\theta) \implies m = 2\cos(2\pi/n)\]
-	\[ n = 1,2,3,4,6\]
-	<aside class='notes'> Now, that we are assuming a crystal's structure is periodic, ie has translational symmetry, we can show that the only possible rotational symmetries it can have are 1, 2, 3, 4, and 6 fold.  The crystal sits in three dimensional space, but let's consider the plane for which we see the rotational symmetry.  This is done with a little bit of trig and algebra.  </aside>
-	</section>  -->
-
-
 	<section>
 		<p class="titleText">Dan Shechtman </p>
 		<img src="public/images/dan-shechtman-lab.jpg"  height="40%" width="40%" align='left'>
@@ -154,17 +136,6 @@
 
 		<aside class='notes'> The story begins in 1982 with a chemist who was studying rapidly solidified aluminum transition metal alloys, when he stumbled upon this alloy of aluminum and manganese on the right. </aside>
 	</section>
-<!-- 
-	<section>
-		<p>X-ray Diffraction (1912)</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/HrWT2M63DbU?si=HmFD5FTpeXaMQ_JX&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-		<aside class='notes'> X-rays are a form of light that has a wavelength about the size of an atom.  The peaks we see are a consequence of constructive interference.  X-ray diffraction was used to identify and classify crystals.  Crytallographers work backwards from diffraction pattern to 3d lattice.  </aside>
-
-	</section>
-
-	<section>
-
-	</section> -->
 
 	<section>
 		<p class="titleText"> Forbidden Symmetry </p> 
@@ -199,24 +170,6 @@
 		<aside class='notes'> 
 		In spite of all this, Dan says that the experience was not as traumatic as it sounded. Scientists around the world had quickly replicated Shechtman's discovery and, had found crystal-like materials with 7 fold, 8-fold, 12-fold etc symmetry. The field of crystallography was experiencing a paradigm shift and there was a need to redefine how we think of crystals.  Dan Shechtman was urged by his collaborators to dig deeper.  </aside> 
 	</section>
-
-	<!-- <section>
-		<p class="titleText"> Quasicrystals </p>
-		<img src="public/images/quasicrystal.jpg" height="50%" width="50%" align='left'>
-		<aside class='notes'>  Shechtman and his team found that the material was made up of aperiodic tilings of two types of rhombuses.  The material was not periodic, but it was ordered.  The material was a solid with a discrete diffraction pattern, but it was not a crystal.  It was a new kind of matter.  They coined the term quasicrystal and described them as models of aperiodic tilings of three dimensional space.  The new theory overturned 200 years of scientific dogma.  By changing the set of assumptions, quasicrstals went against all of the previously accepted mathematical theorems about the symmetry of matter. Symmetries once thought to be forbidden for solids are actually possible for quasicrystals, including solids with axes of ten-fold symmetry.  Even more surprisingly, the two researchers had been working independendently, the only found out about each other when Steinhardt and his student Levine were shown a preprint of the Shechtman team's paper. Paul immediately recognized that Shechtman's discovery could be experimental proof of their still-unpublished quasicrystal theory.  </aside>
-	</section> -->
-
-
-	<!-- But other compounds have been produced with other symmetries, like 8-fold or 12-fold symmetries. Besides having their surprising structure, these
-materials exhibit strange properties. For instance, even though made of good metals,
-they are mostly insulators at low temperature [62, 99]. They are also mechanically hard
-and fragile, and they exhibit a superplastic transition at high temperature just below the
-melting temperature (see for instance [62] for some of these properties). From the point
-of view that is developped in this course, the most interesting aspect of these materials is
-that there is no way of treating the aperiodicity as a perturbation of a periodic structure.
-Moreover, numerical calculations proved to be extremely hard and they are not powerful
-enough to explain most of the properties described above. There is a need for a new
-approach and this a typical interesting problem of Mathematical Physics --  Connes>
 
 	<section>
 		<p> Meanwhile in mathematics...</p> <br>
@@ -262,10 +215,10 @@ approach and this a typical interesting problem of Mathematical Physics --  Conn
 	</aside>  
 	</section>
 
-	<section>
+	 <section>
 		<p class="titleText"> Aperiodic Tilings </p>
-		<div style='background-color: #174038; padding: 30px'>
-			An aperiodic tiling has no translational symmetry but does have long range order.
+		<div >
+			An aperiodic tiling has no translational symmetry but is highly ordered.
 		</div>
 		<!-- https://preshing.com/20110831/penrose-tiling-explained/ -->
 		<aside class="notes">Aperiodically, means that the tiling has some order, finite patches of the tilling will repeat throughout the tiling, but it does not have translational order.  No matter how you move the tiling around, it will never overlap back onto itself. </aside>
@@ -280,6 +233,7 @@ approach and this a typical interesting problem of Mathematical Physics --  Conn
 
 	<section>
 		<img src="public/images/penroseSubstitution.png"/>
+		<aside class="notes"> There are three main ways to construct aperiodic tilings.  One of them is to use local matching rules, which are markings on the tiles to let you know which piece you can put in next.  The second way is to use a projection  method from a higher dimensional periodic lattice onto the plane.  For example, the Penrose tiling can be constructed using a five dimensional lattice.  The last way is to use a substitution method which is shown here, there is a mapping that takes each prototile to a patch of tiles.  This tells you how to subdived the tiling and after inflating you cover a larger and larger area. </aside>
 	</section>
 
 	<!-- https://www.chiark.greenend.org.uk/~sgtatham/quasiblog/aperiodic-tilings/ -->
@@ -300,12 +254,13 @@ approach and this a typical interesting problem of Mathematical Physics --  Conn
 		<img src="public/images/davidSmith.jpg" height="400px"/>
 <br>
 		Smith–Myers–Kaplan–Goodman-Strauss "hat" and "Spectre" polytile
+		<aside class="notes"> Craig S Kaplan - "As the impact of our aperiodic monotiles ripples outward, I'm sure it will stimulate new scholarly research.  But I hope we also entice others who might have seen mathematics as forbidding but now recognize an opportunity to play."</aside>
 	</section>
 
 	<!-- <section>
 		People are pretty obsessed with the spectre and turtle tile as well.
 		<!-- https://www.nytimes.com/2023/12/10/science/mathematics-tiling-einstein.html -->
-	</section> 
+	<!-- </section>  -->
 
 	<section> 
 		How do aperiodic tilings link to quasicrystals?
@@ -353,15 +308,15 @@ approach and this a typical interesting problem of Mathematical Physics --  Conn
 
 	<section>
 		<ul> 
-			<li> (1611) Kepler write essay on geometry of snowflakes</li>
-			<li> (1960s) Wang conjecture disproved by Berger by aperiodic tiling consisting of 20000+ tiles </li> 
+			<li> (1611) Kepler essay on geometry of snowflakes</li>
+			<li> (1960s) Aperiodic tiling made with 20000+ tiles </li> 
 			<li> (1974) Penrose creates aperiodic tiling with two tiles</li> 
-			<li> (1982) Dan Shechtman discovers quasicrystal</li> 
-			<li> (1984) Shechtman, Blech, Gratias, Cahn. Paper on Quasicrystals published </li> 
-			<li> (1984) Steinhardt, Levine. Coins term and publishes theory on quasicrystals</li>
-			<li> (2009) First natural quasicrystal found by Steinhardt team</li>
+			<li> (1982) Quasicrystal discovered</li> 
+			<li> (1984) Theory on quasicrystals published</li>
+			<li> (1992) International Union of Crystallography accepted the existance of quasiperiodic materials</li>
+			<li> (2009) First natural quasicrystal found</li>
 			<li> (2011) Shechtman wins Nobel prize in chemistry</li>
-			<li> (2021) Quasicrystal found in Los Alamos nuclear blast.</li>
+			<li> (2021) Quasicrystal found in nuclear blast.</li>
 			<li> (2023) Aperiodic tiling constructed using one tile</li>
 		</ul>
 	</section>
@@ -389,9 +344,32 @@ approach and this a typical interesting problem of Mathematical Physics --  Conn
 <li> <a hreef=https://www.pnas.org/doi/10.1073/pnas.2101350118> Nuclear blast</a> </li>
 </li>
 </ul> <br>
+</section>
 
+	<section>
+		<h4> The only possible rotational symmetries of a crystal are 1,2,3, 4 and 6. </h4>
+	<div class='row'>	<img src='public/images/crystallographicrestriction.png' width='50%'> <img src='public/images/crystallographicrestriction2.png' width='30%'> </div>
+	<p> Rotate one row by $ \theta =2\pi/n$ and the other by $-\theta$.   </p>
+	\[ ma = 2a\cos(\theta) \implies m = 2\cos(2\pi/n)\]
+	\[ n = 1,2,3,4,6\]
+	<aside class='notes'> Now, that we are assuming a crystal's structure is periodic, ie has translational symmetry, we can show that the only possible rotational symmetries it can have are 1, 2, 3, 4, and 6 fold.  The crystal sits in three dimensional space, but let's consider the plane for which we see the rotational symmetry.  This is done with a little bit of trig and algebra.  </aside>
+ </section> 
 
-				</section>
+ <section>
+	<p>X-ray Diffraction (1912)</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/HrWT2M63DbU?si=HmFD5FTpeXaMQ_JX&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<aside class='notes'> X-rays are a form of light that has a wavelength about the size of an atom.  The peaks we see are a consequence of constructive interference.  X-ray diffraction was used to identify and classify crystals.  Crytallographers work backwards from diffraction pattern to 3d lattice.  </aside>
+
+</section>
+
+	<!-- <section>
+
+		<img src="public/images/lattice-patterns.png.crdownload" height="400px" align="center">
+		//https://echemi.com/community/why-are-there-exactly-5-types-of-two-dimensional-lattices-and-what-distinguishes-them_mjart2203305730_109.html
+		<aside class='notes'> </aside>
+	</section> -->
+
+<!-- https://www.youtube.com/watch?v=t0IOcrah80k -->
 
 <!-- 
 
